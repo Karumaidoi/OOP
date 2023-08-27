@@ -3,15 +3,15 @@
 const Person = function (firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
-
-  this.sayHi = function () {
-    console.log();
-    return `My name is ${firstName} and ${lastName}`;
-  };
 };
 
-const Person2 = function (age) {};
-
 const jonas = new Person("Alex", "Maina");
-console.log(jonas.sayHi());
-console.log();
+const alex = new Person("Maina", "Mwangi");
+
+Person.prototype.sayHi = function (firstName, lastName) {
+  console.log("Here");
+  return `My name is ${firstName} and ${lastName}`;
+};
+
+console.log(jonas.sayHi("Alex", "Maina"));
+alex.sayHi();
