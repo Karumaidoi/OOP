@@ -34,3 +34,20 @@ Array.prototype.unique = function () {
 };
 
 console.log(arr.unique());
+
+////////////////////////////////////
+// Classes
+
+class Person2 {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  get name() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
+
+const alex2 = new Person2("Alex", "Maina");
+console.log(alex2.name);
