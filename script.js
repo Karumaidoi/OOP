@@ -13,5 +13,7 @@ Person.prototype.sayHi = function (firstName, lastName) {
   return `My name is ${firstName} and ${lastName}`;
 };
 
+Person.prototype.species = "Homo sapiens";
+
 console.log(jonas.sayHi("Alex", "Maina"));
 alex.sayHi();
